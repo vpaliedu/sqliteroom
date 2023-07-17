@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ez a layout az egyes lista elemek megjelenítését szabályozza.
+* A LinearLayout-ban elhelyezkedő TextView-t jelenít meg minden lista elemhez.
+  A LinearLayout beállítása szerint a gyermekei (jelen esetben a TextView)
+  egymás mellett (horizontálisan) jelennek meg.
+* A TextView szélessége 0dp és súlya 1, ami azt jelenti, hogy a LinearLayout-on belül az elérhető teljes szélességet foglalja el.
+* A LinearLayout orientation attribútumának módosításával megváltoztathatod a lista elemek elrendezését (pl. vertical).
+* A TextView text attribútumával módosíthatod a megjelenített szöveget.
+* A TextView textSize attribútumával módosíthatod a szöveg méretét
+* További TextView vagy más nézetek (ImageView, Button, stb.) hozzáadásával bonyolultabb lista elemeket hozhatsz létre.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Test Item"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Test Item"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Test Item"
+        android:textSize="20sp" />
+</LinearLayout>
